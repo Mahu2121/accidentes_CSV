@@ -8,7 +8,7 @@ public class Accidente {
     private String localizacion;
     private int numero;
     private int codigoDistrito;
-    private  String distrito;
+    private String distrito;
     private String tipoAccidente;
     private String estadoMeteorologico;
     private String tipoVehiculo;
