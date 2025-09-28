@@ -47,8 +47,76 @@ public class Accidente {
         this.positivoAlcohol = positivoAlcohol;
     }
 
+    public String getFecha() {
+        return fecha;
+    }
 
+    public int getNumExpediente() {
+        return numExpediente;
+    }
 
+    public String getHora() {
+        return hora;
+    }
 
+    public String getLocalizacion() {
+        return localizacion;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public int getCodigoDistrito() {
+        return codigoDistrito;
+    }
+
+    public String getDistrito() {
+        return distrito;
+    }
+
+    public String getTipoAccidente() {
+        return tipoAccidente;
+    }
+
+    public String getEstadoMeteorologico() {
+        return estadoMeteorologico;
+    }
+
+    public String getTipoVehiculo() {
+        return tipoVehiculo;
+    }
+
+    public String getTipoPersona() {
+        return tipoPersona;
+    }
+
+    public String getRangoEdad() {
+        return rangoEdad;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public int getCodLesividad() {
+        return codLesividad;
+    }
+
+    public String getLesividad() {
+        return lesividad;
+    }
+
+    public int getCoordenadaX() {
+        return coordenadaX;
+    }
+
+    public int getCoordenadaY() {
+        return coordenadaY;
+    }
+
+    public String getPositivoAlcohol() {
+        return positivoAlcohol;
+    }
 
 }
