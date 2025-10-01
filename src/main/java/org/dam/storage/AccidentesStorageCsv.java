@@ -62,39 +62,7 @@ public class AccidentesStorageCsv implements AccidentesStorage{
         );
     }
 
-    @Override
-    public void writeToFile(File file, List<Accidente> accidentes) {
-        try {
-            StringBuilder content = new StringBuilder();
-            content.append("numExpediente;fecha;hora;localizacion;numero;codigoDistrito;distrito;tipoAccidente;estadoMeteorologico;tipoVehiculo;tipoPersona;rangoEdad;sexo;codLesividad;lesividad;coordenadaX;coordenadaY;positivoAlcohol\n");
 
-            for (Accidente accidente : accidentes) {
-                content.append(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s",
-                        accidente.getNumExpediente(),
-                        accidente.getFecha(),
-                        accidente.getHora(),
-                        accidente.getLocalizacion(),
-                        accidente.getNumero() != null ? accidente.getNumero() : "",
-                        accidente.getCodigoDistrito() != null ? accidente.getCodigoDistrito() : "",
-                        accidente.getDistrito(),
-                        accidente.getTipoAccidente(),
-                        accidente.getEstadoMeteorologico(),
-                        accidente.getTipoVehiculo(),
-                        accidente.getTipoPersona(),
-                        accidente.getRangoEdad(),
-                        accidente.getSexo(),
-                        accidente.getCodLesividad() != null ? accidente.getCodLesividad() : "",
-                        accidente.getLesividad(),
-                        accidente.getCoordenadaX() != null ? accidente.getCoordenadaX() : "",
-                        accidente.getCoordenadaY() != null ? accidente.getCoordenadaY() : "",
-                        accidente.getPositivoAlcohol()
-                ));
-            }
-            Files.writeString(file.toPath(), content.toString());
-        } catch (IOException e) {
-            System.out.println(e);
-        }
-    }
 }
 
 

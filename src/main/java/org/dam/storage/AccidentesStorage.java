@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface AccidentesStorage {
     List<Accidente> readFromFile(File file);
-    void writeToFile(File file, List<Accidente> accidentes);
+
 }
